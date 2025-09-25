@@ -1,4 +1,4 @@
-package typesOfSort;
+package sorting.typesOfSort;
 
 public class BubbleSort {
     public void bubbleSort(int[] arr){

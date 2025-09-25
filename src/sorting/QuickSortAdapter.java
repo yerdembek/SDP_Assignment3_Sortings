@@ -1,6 +1,8 @@
-import typesOfSort.QuickSort;
+package sorting;
 
-public class QuickSortAdapter implements UniversalSort{
+import sorting.typesOfSort.QuickSort;
+
+public class QuickSortAdapter implements UniversalSort {
     private QuickSort quickSort = new QuickSort();
 
     public void sort(int[] arr){

@@ -1,4 +1,4 @@
-package typesOfSort;
+package sorting.typesOfSort;
 
 public class QuickSort {
     public void quickSort(int[] array) {

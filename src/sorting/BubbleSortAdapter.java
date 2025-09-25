@@ -1,4 +1,6 @@
-import typesOfSort.BubbleSort;
+package sorting;
+
+import sorting.typesOfSort.BubbleSort;
 
 public class BubbleSortAdapter implements UniversalSort {
     private BubbleSort bubbleSort =  new BubbleSort();
