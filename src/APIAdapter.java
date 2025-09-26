@@ -15,7 +15,6 @@ class APIAdapter implements OldAPI {
         return buildXML(users);
     }
 
-    // очень простой парсер JSON массива [{...},{...}]
     private List<User> parseUsers(String json) {
         List<User> users = new ArrayList<>();
         Pattern p = Pattern.compile("\\{\\s*\"id\"\\s*:\\s*(\\d+),\\s*\"name\"\\s*:\\s*\"([^\"]+)\",\\s*\"email\"\\s*:\\s*\"([^\"]+)\"\\s*}");
@@ -29,7 +28,6 @@ class APIAdapter implements OldAPI {
         return users;
     }
 
-    // строим XML строку вручную
     private String buildXML(List<User> users) {
         StringBuilder sb = new StringBuilder();
         sb.append("<users>\n");
